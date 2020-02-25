@@ -1,16 +1,17 @@
 {
-    "name"         : "node-red-auth-twitter",
+    "name"         : "node-red-auth-gitlab",
     "version"      : "0.1.1",
-    "description"  : "A Twitter authentication plugin for Node-RED",
+    "description"  : "A Gitlab authentication plugin for Node-RED",
     "homepage"     : "http://nodered.org",
     "license"      : "Apache-2.0",
     "repository"   : {
         "type":"git",
-        "url":"https://github.com/node-red/node-red-auth-twitter.git"
+        "url":"https://github.com/vincentsc/node-red-auth-gitlab.git"
     },
     "main": "./lib/index.js",
     "author": [
         {"name": "Nick O'Leary", "email": "nick.oleary@gmail.com"}
+        {"name": "Vincent Hindriksen", "email": "vhindriksen@gmail.com"}
     ],
     "keywords": [
         "node-red",
@@ -20,6 +21,6 @@
         "auth"
     ],
     "dependencies": {
-        "passport-twitter": "1.0.4"
+        "passport-gitlab2": "4.0.0"
     }
 }
