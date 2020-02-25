@@ -29,16 +29,16 @@ Access control for the Node-RED editor is configured in your `settings.js` file
 using the `adminAuth` property.
 
     adminAuth: require('node-red-auth-gitlab')({
-        clientID: GITLAB_APP_ID,
-        clientSecret: GITLAB_APP_SECRET,
-        baseURL: "http://localhost:1880/",
+        clientID: "GITLAB_APP_ID",
+        clientSecret: "GITLAB_APP_SECRET",
+        baseURL: "http://localhost:1880",
         gitlabURL: "https://gitlab.com/",
         users: [
-           { username: "vincent",permissions: ["*"]}
+           { username: "vincent", permissions: ["*"]}
         ]
     })
 
-The `baseURL` property is the URL used to access the Node-RED editor. The `gitlabURL` is where Gitlab is hosted, defaulting to "https://gitlab.com/".
+The `baseURL` property is the URL used to access the Node-RED editor. The `gitlabURL` is where Gitlab is hosted, defaulting to "https://gitlab.com/". The CallbackURL needs to be exactly like the baseURL with "/auth/strategy/callback", so for the above example "http://localhost:1880/auth/strategy/callback".
 
 The `users` property is the list of Gitlab users who are allowed to access the
 editor. It is the same as used by `adminAuth` as described in the [security documentation](http://nodered.org/docs/security), but without the `password` property.
