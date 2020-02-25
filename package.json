@@ -10,7 +10,7 @@
     },
     "main": "./lib/index.js",
     "author": [
-        {"name": "Nick O'Leary", "email": "nick.oleary@gmail.com"}
+        {"name": "Nick O'Leary", "email": "nick.oleary@gmail.com"},
         {"name": "Vincent Hindriksen", "email": "vhindriksen@gmail.com"}
     ],
     "keywords": [
